@@ -15,6 +15,11 @@
 		D955CE112181B90000B7E188 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D955CE102181B90000B7E188 /* main.m */; };
 		D955CE1B2181B90000B7E188 /* runtimeChangeMethodTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D955CE1A2181B90000B7E188 /* runtimeChangeMethodTests.m */; };
 		D955CE262181B90000B7E188 /* runtimeChangeMethodUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D955CE252181B90000B7E188 /* runtimeChangeMethodUITests.m */; };
+		D955CE3B2181C54900B7E188 /* NSObject+IMPChangeTool.m in Sources */ = {isa = PBXBuildFile; fileRef = D955CE3A2181C54900B7E188 /* NSObject+IMPChangeTool.m */; };
+		D955CE682181EB9400B7E188 /* NSDictionary+Safe.m in Sources */ = {isa = PBXBuildFile; fileRef = D955CE672181EB9400B7E188 /* NSDictionary+Safe.m */; };
+		D955CE742181F37000B7E188 /* NSArray+Safe.m in Sources */ = {isa = PBXBuildFile; fileRef = D955CE732181F37000B7E188 /* NSArray+Safe.m */; };
+		D955CE7B2181F78400B7E188 /* NSMutableDictionary+Safe.m in Sources */ = {isa = PBXBuildFile; fileRef = D955CE7A2181F78400B7E188 /* NSMutableDictionary+Safe.m */; };
+		D955CE7E2181F7D100B7E188 /* NSMutableArray+Safe.m in Sources */ = {isa = PBXBuildFile; fileRef = D955CE7D2181F7D100B7E188 /* NSMutableArray+Safe.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +56,17 @@
 		D955CE212181B90000B7E188 /* runtimeChangeMethodUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = runtimeChangeMethodUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D955CE252181B90000B7E188 /* runtimeChangeMethodUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = runtimeChangeMethodUITests.m; sourceTree = "<group>"; };
 		D955CE272181B90000B7E188 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D955CE392181C54900B7E188 /* NSObject+IMPChangeTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+IMPChangeTool.h"; sourceTree = "<group>"; };
+		D955CE3A2181C54900B7E188 /* NSObject+IMPChangeTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+IMPChangeTool.m"; sourceTree = "<group>"; };
+		D955CE662181EB9400B7E188 /* NSDictionary+Safe.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+Safe.h"; sourceTree = "<group>"; };
+		D955CE672181EB9400B7E188 /* NSDictionary+Safe.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+Safe.m"; sourceTree = "<group>"; };
+		D955CE722181F37000B7E188 /* NSArray+Safe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Safe.h"; sourceTree = "<group>"; };
+		D955CE732181F37000B7E188 /* NSArray+Safe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Safe.m"; sourceTree = "<group>"; };
+		D955CE752181F5B500B7E188 /* ZYQDataSafeTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZYQDataSafeTool.h; sourceTree = "<group>"; };
+		D955CE792181F78400B7E188 /* NSMutableDictionary+Safe.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSMutableDictionary+Safe.h"; sourceTree = "<group>"; };
+		D955CE7A2181F78400B7E188 /* NSMutableDictionary+Safe.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSMutableDictionary+Safe.m"; sourceTree = "<group>"; };
+		D955CE7C2181F7D100B7E188 /* NSMutableArray+Safe.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+Safe.h"; sourceTree = "<group>"; };
+		D955CE7D2181F7D100B7E188 /* NSMutableArray+Safe.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+Safe.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +121,7 @@
 				D955CE022181B8FF00B7E188 /* AppDelegate.m */,
 				D955CE042181B8FF00B7E188 /* ViewController.h */,
 				D955CE052181B8FF00B7E188 /* ViewController.m */,
+				D955CE762181F68000B7E188 /* ZYQDataSafe */,
 				D955CE072181B8FF00B7E188 /* Main.storyboard */,
 				D955CE0A2181B90000B7E188 /* Assets.xcassets */,
 				D955CE0C2181B90000B7E188 /* LaunchScreen.storyboard */,
@@ -130,6 +147,32 @@
 				D955CE272181B90000B7E188 /* Info.plist */,
 			);
 			path = runtimeChangeMethodUITests;
+			sourceTree = "<group>";
+		};
+		D955CE762181F68000B7E188 /* ZYQDataSafe */ = {
+			isa = PBXGroup;
+			children = (
+				D955CE752181F5B500B7E188 /* ZYQDataSafeTool.h */,
+				D955CE392181C54900B7E188 /* NSObject+IMPChangeTool.h */,
+				D955CE3A2181C54900B7E188 /* NSObject+IMPChangeTool.m */,
+				D955CE782181F6D000B7E188 /* Category */,
+			);
+			path = ZYQDataSafe;
+			sourceTree = "<group>";
+		};
+		D955CE782181F6D000B7E188 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				D955CE722181F37000B7E188 /* NSArray+Safe.h */,
+				D955CE732181F37000B7E188 /* NSArray+Safe.m */,
+				D955CE7C2181F7D100B7E188 /* NSMutableArray+Safe.h */,
+				D955CE7D2181F7D100B7E188 /* NSMutableArray+Safe.m */,
+				D955CE662181EB9400B7E188 /* NSDictionary+Safe.h */,
+				D955CE672181EB9400B7E188 /* NSDictionary+Safe.m */,
+				D955CE792181F78400B7E188 /* NSMutableDictionary+Safe.h */,
+				D955CE7A2181F78400B7E188 /* NSMutableDictionary+Safe.m */,
+			);
+			path = Category;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -263,7 +306,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				D955CE062181B8FF00B7E188 /* ViewController.m in Sources */,
+				D955CE742181F37000B7E188 /* NSArray+Safe.m in Sources */,
 				D955CE112181B90000B7E188 /* main.m in Sources */,
+				D955CE7B2181F78400B7E188 /* NSMutableDictionary+Safe.m in Sources */,
+				D955CE7E2181F7D100B7E188 /* NSMutableArray+Safe.m in Sources */,
+				D955CE3B2181C54900B7E188 /* NSObject+IMPChangeTool.m in Sources */,
+				D955CE682181EB9400B7E188 /* NSDictionary+Safe.m in Sources */,
 				D955CE032181B8FF00B7E188 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
