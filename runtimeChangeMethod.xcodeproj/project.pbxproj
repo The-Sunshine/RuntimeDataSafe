@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D913027A218FCE7F0072C912 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = D9130279218FCE7F0072C912 /* Person.m */; };
 		D955CE032181B8FF00B7E188 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D955CE022181B8FF00B7E188 /* AppDelegate.m */; };
 		D955CE062181B8FF00B7E188 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D955CE052181B8FF00B7E188 /* ViewController.m */; };
 		D955CE092181B8FF00B7E188 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D955CE072181B8FF00B7E188 /* Main.storyboard */; };
@@ -40,6 +41,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D9130278218FCE7F0072C912 /* Person.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		D9130279218FCE7F0072C912 /* Person.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
 		D955CDFE2181B8FF00B7E188 /* runtimeChangeMethod.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = runtimeChangeMethod.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D955CE012181B8FF00B7E188 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D955CE022181B8FF00B7E188 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -121,6 +124,8 @@
 				D955CE022181B8FF00B7E188 /* AppDelegate.m */,
 				D955CE042181B8FF00B7E188 /* ViewController.h */,
 				D955CE052181B8FF00B7E188 /* ViewController.m */,
+				D9130278218FCE7F0072C912 /* Person.h */,
+				D9130279218FCE7F0072C912 /* Person.m */,
 				D955CE762181F68000B7E188 /* ZYQDataSafe */,
 				D955CE072181B8FF00B7E188 /* Main.storyboard */,
 				D955CE0A2181B90000B7E188 /* Assets.xcassets */,
@@ -311,6 +316,7 @@
 				D955CE7B2181F78400B7E188 /* NSMutableDictionary+Safe.m in Sources */,
 				D955CE7E2181F7D100B7E188 /* NSMutableArray+Safe.m in Sources */,
 				D955CE3B2181C54900B7E188 /* NSObject+IMPChangeTool.m in Sources */,
+				D913027A218FCE7F0072C912 /* Person.m in Sources */,
 				D955CE682181EB9400B7E188 /* NSDictionary+Safe.m in Sources */,
 				D955CE032181B8FF00B7E188 /* AppDelegate.m in Sources */,
 			);

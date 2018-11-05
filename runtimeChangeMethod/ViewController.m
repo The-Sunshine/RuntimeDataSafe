@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "ZYQDataSafeTool.h"
+#import "Person.h"
 
 @interface ViewController ()
 
@@ -23,6 +24,9 @@
 
 -(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
 {
+    Person * p = [[Person alloc]init];
+    [p eat];
+    
     NSMutableDictionary * dic = [NSMutableDictionary dictionary];
     
     [dic setValue:nil forKey:nil];
