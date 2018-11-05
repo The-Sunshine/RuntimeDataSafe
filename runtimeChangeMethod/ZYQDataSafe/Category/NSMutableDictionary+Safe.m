@@ -16,9 +16,9 @@
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         
-        [self SwizzlingSystemMethodString:@"__NSDictionaryM" SystemSEL:@selector(setObject:forKey:) SafeMethodString:@"NSMutableDictionary" SafeSEL:@selector(safe_setObject:forKey:)];
+        [self swizzlingSystemMethodString:@"__NSDictionaryM" SystemSEL:@selector(setObject:forKey:) SafeMethodString:@"NSMutableDictionary" SafeSEL:@selector(safe_setObject:forKey:)];
      
-        [self SwizzlingSystemMethodString:@"__NSDictionaryM" SystemSEL:@selector(setValue:forKey:) SafeMethodString:@"NSMutableDictionary" SafeSEL:@selector(safe_setValue:forKey:)];
+        [self swizzlingSystemMethodString:@"__NSDictionaryM" SystemSEL:@selector(setValue:forKey:) SafeMethodString:@"NSMutableDictionary" SafeSEL:@selector(safe_setValue:forKey:)];
     });
 }
 

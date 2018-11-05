@@ -16,11 +16,11 @@
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
 
-        [self SwizzlingSystemMethodString:@"__NSSingleObjectArrayI" SystemSEL:@selector(objectAtIndex:) SafeMethodString:@"NSArray" SafeSEL: @selector(safe_objectAtIndex:)];
+        [self swizzlingSystemMethodString:@"__NSSingleObjectArrayI" SystemSEL:@selector(objectAtIndex:) SafeMethodString:@"NSArray" SafeSEL: @selector(safe_objectAtIndex:)];
         
-        [self SwizzlingSystemMethodString:@"NSArray" SystemSEL:@selector(arrayByAddingObject:) SafeMethodString:@"NSArray" SafeSEL:@selector(safe_arrayByAddingObject:)];
+        [self swizzlingSystemMethodString:@"NSArray" SystemSEL:@selector(arrayByAddingObject:) SafeMethodString:@"NSArray" SafeSEL:@selector(safe_arrayByAddingObject:)];
 
-        [self SwizzlingSystemMethodString:@"__NSPlaceholderArray" SystemSEL:@selector(initWithObjects:count:) SafeMethodString:@"NSArray" SafeSEL:@selector(initWithObjects_safe:count:)];
+        [self swizzlingSystemMethodString:@"__NSPlaceholderArray" SystemSEL:@selector(initWithObjects:count:) SafeMethodString:@"NSArray" SafeSEL:@selector(initWithObjects_safe:count:)];
     });
 }
 

@@ -29,12 +29,12 @@
     
     NSMutableDictionary * dic = [NSMutableDictionary dictionary];
     
-    [dic setValue:nil forKey:nil];
-    [dic setObject:nil forKey:nil];
+    NSString * key;
+    NSString * value;
+    [dic setValue:value forKey:key];
+    [dic setObject:value forKey:key];
     
     [dic objectForKey:@"name"];
-    
-    
 }
 
 @end

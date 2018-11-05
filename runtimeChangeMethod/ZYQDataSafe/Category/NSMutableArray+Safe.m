@@ -16,19 +16,19 @@
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         
-        [self SwizzlingSystemMethodString:@"__NSArrayM" SystemSEL:@selector(addObject:) SafeMethodString:@"NSMutableArray" SafeSEL:@selector(safe_addObject:)];
+        [self swizzlingSystemMethodString:@"__NSArrayM" SystemSEL:@selector(addObject:) SafeMethodString:@"NSMutableArray" SafeSEL:@selector(safe_addObject:)];
         
-        [self SwizzlingSystemMethodString:@"__NSArrayM" SystemSEL:@selector(insertObject:atIndex:) SafeMethodString:@"NSMutableArray" SafeSEL:@selector(safe_insertObject:atIndex:)];
+        [self swizzlingSystemMethodString:@"__NSArrayM" SystemSEL:@selector(insertObject:atIndex:) SafeMethodString:@"NSMutableArray" SafeSEL:@selector(safe_insertObject:atIndex:)];
 
-        [self SwizzlingSystemMethodString:@"__NSArrayM" SystemSEL:@selector(replaceObjectAtIndex:withObject:) SafeMethodString:@"NSMutableArray" SafeSEL:@selector(safe_replaceObjectAtIndex:withObject:)];
+        [self swizzlingSystemMethodString:@"__NSArrayM" SystemSEL:@selector(replaceObjectAtIndex:withObject:) SafeMethodString:@"NSMutableArray" SafeSEL:@selector(safe_replaceObjectAtIndex:withObject:)];
         
-        [self SwizzlingSystemMethodString:@"__NSArrayM" SystemSEL:@selector(removeObjectAtIndex:) SafeMethodString:@"NSMutableArray" SafeSEL:@selector(safe_removeObjectAtIndex:)];
+        [self swizzlingSystemMethodString:@"__NSArrayM" SystemSEL:@selector(removeObjectAtIndex:) SafeMethodString:@"NSMutableArray" SafeSEL:@selector(safe_removeObjectAtIndex:)];
         
-        [self SwizzlingSystemMethodString:@"NSMutableArray" SystemSEL:@selector(removeObjectsAtIndexes:) SafeMethodString:@"NSMutableArray" SafeSEL:@selector(safe_removeObjectsAtIndexes:)];
+        [self swizzlingSystemMethodString:@"NSMutableArray" SystemSEL:@selector(removeObjectsAtIndexes:) SafeMethodString:@"NSMutableArray" SafeSEL:@selector(safe_removeObjectsAtIndexes:)];
 
-        [self SwizzlingSystemMethodString:@"__NSArrayM" SystemSEL:@selector(removeObjectsInRange:) SafeMethodString:@"NSMutableArray" SafeSEL:@selector(safe_removeObjectsInRange:)];
+        [self swizzlingSystemMethodString:@"__NSArrayM" SystemSEL:@selector(removeObjectsInRange:) SafeMethodString:@"NSMutableArray" SafeSEL:@selector(safe_removeObjectsInRange:)];
         
-        [self SwizzlingSystemMethodString:@"__NSArrayM" SystemSEL:@selector(objectAtIndex:) SafeMethodString:@"NSMutableArray" SafeSEL:@selector(safe_objectAtIndex:)];
+        [self swizzlingSystemMethodString:@"__NSArrayM" SystemSEL:@selector(objectAtIndex:) SafeMethodString:@"NSMutableArray" SafeSEL:@selector(safe_objectAtIndex:)];
     });
 }
 

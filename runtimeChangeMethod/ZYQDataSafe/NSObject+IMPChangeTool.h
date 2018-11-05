@@ -13,7 +13,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface NSObject (IMPChangeTool)
 
-+ (void)SwizzlingSystemMethodString:(NSString *)systemMethodString SystemSEL:(SEL)SystemSEL SafeMethodString:(NSString *)safeMethodString SafeSEL:(SEL)safeSEL;
++ (void)swizzlingSystemMethodString:(NSString *)systemMethodString SystemSEL:(SEL)SystemSEL SafeMethodString:(NSString *)safeMethodString SafeSEL:(SEL)safeSEL;
 
 @end
 

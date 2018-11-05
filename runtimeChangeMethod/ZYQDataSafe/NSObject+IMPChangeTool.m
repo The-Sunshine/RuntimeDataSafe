@@ -10,25 +10,23 @@
 
 @implementation NSObject (IMPChangeTool)
 
-+ (void)SwizzlingSystemMethodString:(NSString *)systemMethodString SystemSEL:(SEL)SystemSEL SafeMethodString:(NSString *)safeMethodString SafeSEL:(SEL)safeSEL
++ (void)load
+{
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        
+        [self swizzlingSystemMethodString:@"NSObject" SystemSEL:@selector(forwardingTargetForSelector:) SafeMethodString:@"NSObject" SafeSEL: @selector(safe_forwardingTargetForSelector:)];
+    });
+}
+
++ (void)swizzlingSystemMethodString:(NSString *)systemMethodString SystemSEL:(SEL)SystemSEL SafeMethodString:(NSString *)safeMethodString SafeSEL:(SEL)safeSEL
 {
     Method system = class_getInstanceMethod(NSClassFromString(systemMethodString), SystemSEL);
     Method safe = class_getInstanceMethod(NSClassFromString(safeMethodString), safeSEL);
     method_exchangeImplementations(system, safe);
 }
 
-+ (void)load
-{
-    static dispatch_once_t onceToken;
-    dispatch_once(&onceToken, ^{
-        
-        [self SwizzlingSystemMethodString:@"NSObject" SystemSEL:@selector(forwardingTargetForSelector:) SafeMethodString:@"NSObject" SafeSEL: @selector(safe_forwardingTargetForSelector:)];
-        
-        
-    });
-}
-
--(id)safe_forwardingTargetForSelector:(SEL)aSelector
+- (id)safe_forwardingTargetForSelector:(SEL)aSelector
 {
     // 也可以用映射 NSSelectorFromString 但字符串易出错
     SEL sel = @selector(forwardingTargetForSelector:);
